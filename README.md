@@ -1,6 +1,4 @@
----
-title: React Countdown Template
----
+
 
 # React Countdown Template
 
