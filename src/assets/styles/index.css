@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:hover {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+:root {
+  /* Dark theme */
+  --dark-background: #000;
+  --dark-foreground: #fff;
+  /* Light theme */
+  --light-background: #fff;
+  --light-foreground: #000;
+
+  /* Defaults */
+  --current-background: var(--light-background);
+  --current-foreground: var(--light-foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --current-background: var(--dark-background);
+    --current-foreground: var(--dark-foreground);
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  user-select: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--current-background);
+  color: var(--current-foreground);
+  background-image: url(../images/noise.svg);
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 90px;
+  margin: -45px 0 0 -70px;
+}
