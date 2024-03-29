@@ -65,14 +65,25 @@ body {
   background-color: var(--current-background);
   color: var(--current-foreground);
   background-image: url(../images/noise.svg);
+  height: 100dvh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 140px;
-  height: 90px;
-  margin: -45px 0 0 -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
+h1 {
+  font-size: 2vw;
+  font-family:'Courier New', Courier, monospace;
 }
